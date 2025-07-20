@@ -2,9 +2,9 @@ import java.sql.*;
 import java.util.*;
 
 public class PatientManager {
-    private static final String URL =
-    private static final String USER =
-    private static final String PASS =
+    private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
+    private static final String USER = "postgres";
+    private static final String PASS = "alicia_keyin";
 
     public static void insertPatients(List<Patient> patients) throws SQLException {
         try (Connection conn = DriverManager.getConnection((URL), USER, PASS)) {
