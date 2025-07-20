@@ -14,4 +14,20 @@ public class Patient {
     public String toString() {
         return patientId + "-" + firstName + "" + lastName + "(DOB: " + dob + ")";
     }
+
+    public int getPatientID() {
+        return patientId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getDob() {
+        return dob;
+    }
 }
