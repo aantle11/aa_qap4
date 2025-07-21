@@ -39,9 +39,15 @@ public class MainApp {
                     }
 
                     case 4 -> {
-                        
+                        List<Patient> patients = PatientManager.readPatients();
+                        patients.forEach(System.out::println);
                     }
+
+                    case 5 -> System.exit(0);
+                    default -> System.out.println("Invalid Number");
                 }
+            } catch (Exception e) {
+                System.out.println("Error" + e.getMessage());
             }
         }
     }
